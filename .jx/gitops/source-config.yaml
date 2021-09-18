@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: javaapp
     - name: kolas
+    - name: sampleapp
     - name: spring
     scheduler: in-repo
   slack:
