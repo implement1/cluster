@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: kolas
     - name: spring
     scheduler: in-repo
   slack:
