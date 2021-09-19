@@ -12,6 +12,7 @@ spec:
     - name: kolas
     - name: sampleapp
     - name: spring
+    - name: testrepo
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
