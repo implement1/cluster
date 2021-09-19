@@ -11,6 +11,7 @@ spec:
     - name: automatic-ecommerce
     - name: budget
     - name: javaapp
+    - name: jxautomatic-ecommerce
     - name: kolas
     - name: sampleapp
     - name: spring
