@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         implement1/automatic-ecommerce: true
+        implement1/budget: true
         implement1/cluster: true
         implement1/javaapp: true
         implement1/kolas: true
@@ -26,6 +27,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         implement1/automatic-ecommerce: merge
+        implement1/budget: merge
         implement1/cluster: merge
         implement1/javaapp: merge
         implement1/kolas: merge
@@ -44,6 +46,7 @@ data:
         repos:
         - implement1/cluster
         - implement1/automatic-ecommerce
+        - implement1/budget
         - implement1/javaapp
         - implement1/kolas
         - implement1/sampleapp
@@ -60,6 +63,7 @@ data:
         repos:
         - implement1/cluster
         - implement1/automatic-ecommerce
+        - implement1/budget
         - implement1/javaapp
         - implement1/kolas
         - implement1/sampleapp
