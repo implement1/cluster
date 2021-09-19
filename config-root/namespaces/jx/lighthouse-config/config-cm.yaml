@@ -12,6 +12,7 @@ data:
         implement1/kolas: true
         implement1/sampleapp: true
         implement1/spring: true
+        implement1/testrepo: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -28,6 +29,7 @@ data:
         implement1/kolas: merge
         implement1/sampleapp: merge
         implement1/spring: merge
+        implement1/testrepo: merge
       queries:
       - labels:
         - approved
@@ -43,6 +45,7 @@ data:
         - implement1/kolas
         - implement1/sampleapp
         - implement1/spring
+        - implement1/testrepo
       - labels:
         - updatebot
         missingLabels:
@@ -57,6 +60,7 @@ data:
         - implement1/kolas
         - implement1/sampleapp
         - implement1/spring
+        - implement1/testrepo
       target_url: http://lighthouse-jx.212-2-243-73.nip.io/merge/status
 kind: ConfigMap
 metadata:
