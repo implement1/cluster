@@ -6,6 +6,22 @@ data:
       repos:
       - implement1/cluster
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - implement1/javaapp
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - implement1/kolas
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - implement1/sampleapp
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - implement1/spring
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +37,26 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      implement1/javaapp:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      implement1/kolas:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      implement1/sampleapp:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      implement1/spring:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +64,70 @@ data:
     plugins:
       implement1/cluster:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      implement1/javaapp:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      implement1/kolas:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      implement1/sampleapp:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      implement1/spring:
       - approve
       - assign
       - blunderbuss
@@ -55,6 +155,20 @@ data:
     - repos:
       - implement1/cluster
       trusted_org: todo
+    - repos:
+      - implement1/javaapp
+      trusted_org: todo
+    - repos:
+      - implement1/kolas
+      trusted_org: todo
+    - repos:
+      - implement1/sampleapp
+      trusted_org: todo
+    - repos:
+      - implement1/spring
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

@@ -8,6 +8,10 @@ data:
     in_repo_config:
       enabled:
         implement1/cluster: true
+        implement1/javaapp: true
+        implement1/kolas: true
+        implement1/sampleapp: true
+        implement1/spring: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +24,10 @@ data:
         skip-unknown-contexts: false
       merge_method:
         implement1/cluster: merge
+        implement1/javaapp: merge
+        implement1/kolas: merge
+        implement1/sampleapp: merge
+        implement1/spring: merge
       queries:
       - labels:
         - approved
@@ -31,6 +39,10 @@ data:
         - needs-rebase
         repos:
         - implement1/cluster
+        - implement1/javaapp
+        - implement1/kolas
+        - implement1/sampleapp
+        - implement1/spring
       - labels:
         - updatebot
         missingLabels:
@@ -41,7 +53,11 @@ data:
         - needs-rebase
         repos:
         - implement1/cluster
-      target_url: http://lighthouse-jx.192.168.1.2.nip.io/merge/status
+        - implement1/javaapp
+        - implement1/kolas
+        - implement1/sampleapp
+        - implement1/spring
+      target_url: http://lighthouse-jx.212-2-243-73.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
