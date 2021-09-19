@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - implement1/automatic-ecommerce
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - implement1/javaapp
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -22,6 +26,10 @@ data:
       repos:
       - implement1/spring
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - implement1/testrepo
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -32,6 +40,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      implement1/automatic-ecommerce:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       implement1/cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -57,11 +70,32 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      implement1/testrepo:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
     owners: {}
     plugins:
+      implement1/automatic-ecommerce:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       implement1/cluster:
       - config-updater
       - approve
@@ -143,6 +177,22 @@ data:
       - cat
       - dog
       - pony
+      implement1/testrepo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -156,6 +206,9 @@ data:
       - implement1/cluster
       trusted_org: todo
     - repos:
+      - implement1/automatic-ecommerce
+      trusted_org: todo
+    - repos:
       - implement1/javaapp
       trusted_org: todo
     - repos:
@@ -166,6 +219,9 @@ data:
       trusted_org: todo
     - repos:
       - implement1/spring
+      trusted_org: todo
+    - repos:
+      - implement1/testrepo
       trusted_org: todo
     welcome:
     - message_template: Welcome

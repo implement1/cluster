@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: automatic-ecommerce
     - name: javaapp
     - name: kolas
     - name: sampleapp
