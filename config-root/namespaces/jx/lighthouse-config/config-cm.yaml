@@ -11,7 +11,6 @@ data:
         implement1/budget: true
         implement1/cluster: true
         implement1/javaapp: true
-        implement1/jxautomatic-ecommerce: true
         implement1/kolas: true
         implement1/sampleapp: true
         implement1/spring: true
@@ -31,7 +30,6 @@ data:
         implement1/budget: merge
         implement1/cluster: merge
         implement1/javaapp: merge
-        implement1/jxautomatic-ecommerce: merge
         implement1/kolas: merge
         implement1/sampleapp: merge
         implement1/spring: merge
@@ -50,7 +48,6 @@ data:
         - implement1/automatic-ecommerce
         - implement1/budget
         - implement1/javaapp
-        - implement1/jxautomatic-ecommerce
         - implement1/kolas
         - implement1/sampleapp
         - implement1/spring
@@ -68,7 +65,6 @@ data:
         - implement1/automatic-ecommerce
         - implement1/budget
         - implement1/javaapp
-        - implement1/jxautomatic-ecommerce
         - implement1/kolas
         - implement1/sampleapp
         - implement1/spring
