@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: automatic-ecommerce
+    - name: budget
     - name: javaapp
     - name: kolas
     - name: sampleapp
