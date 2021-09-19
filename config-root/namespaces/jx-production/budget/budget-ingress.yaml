@@ -1,0 +1,22 @@
+# Source: budget/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'budget'
+  name: budget
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: budget
+                port:
+                  number: 80
+      host: budget-jx-production.212-2-243-73.nip.io
