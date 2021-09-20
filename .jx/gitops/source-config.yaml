@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: automatic-ecommerce
     - name: budget
+    - name: demo-app
     - name: javaapp
     - name: jxautomatic-ecommerce
     - name: kolas
