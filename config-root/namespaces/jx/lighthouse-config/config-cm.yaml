@@ -10,6 +10,7 @@ data:
         implement1/automatic-ecommerce: true
         implement1/budget: true
         implement1/cluster: true
+        implement1/demo-app: true
         implement1/javaapp: true
         implement1/jxautomatic-ecommerce: true
         implement1/kolas: true
@@ -30,6 +31,7 @@ data:
         implement1/automatic-ecommerce: merge
         implement1/budget: merge
         implement1/cluster: merge
+        implement1/demo-app: merge
         implement1/javaapp: merge
         implement1/jxautomatic-ecommerce: merge
         implement1/kolas: merge
@@ -49,6 +51,7 @@ data:
         - implement1/cluster
         - implement1/automatic-ecommerce
         - implement1/budget
+        - implement1/demo-app
         - implement1/javaapp
         - implement1/jxautomatic-ecommerce
         - implement1/kolas
@@ -67,6 +70,7 @@ data:
         - implement1/cluster
         - implement1/automatic-ecommerce
         - implement1/budget
+        - implement1/demo-app
         - implement1/javaapp
         - implement1/jxautomatic-ecommerce
         - implement1/kolas

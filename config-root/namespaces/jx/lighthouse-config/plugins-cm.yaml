@@ -16,6 +16,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - implement1/demo-app
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - implement1/javaapp
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -59,6 +63,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       implement1/cluster:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      implement1/demo-app:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -132,6 +141,22 @@ data:
       - pony
       implement1/cluster:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      implement1/demo-app:
       - approve
       - assign
       - blunderbuss
@@ -260,6 +285,9 @@ data:
       trusted_org: todo
     - repos:
       - implement1/budget
+      trusted_org: todo
+    - repos:
+      - implement1/demo-app
       trusted_org: todo
     - repos:
       - implement1/javaapp
